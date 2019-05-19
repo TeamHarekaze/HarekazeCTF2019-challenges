@@ -1,0 +1,12 @@
+body {
+  background: black;
+  color: white;
+}
+
+a {
+  color: silver;
+}
+
+a:hover {
+  color: white;
+}

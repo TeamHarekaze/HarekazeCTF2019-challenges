@@ -1,0 +1,63 @@
+body {
+  width: 100%;
+  max-width: 40rem;
+  margin: 1rem auto;
+  font-family: "Consolas", monospace;
+}
+
+main {
+  margin-top: .75rem;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+input[type=text] {
+  padding: .25rem;
+}
+
+/* alert */
+.info {
+  padding: .75rem;
+  color: black;
+  background: #9fbff2;
+  border: 2px solid #76a6f2;
+}
+
+.error {
+  padding: .75rem;
+  color: black;
+  background: #f29fbf;
+  border: 2px solid #ef77a6;
+}
+
+/* navbar */
+.mr-auto {
+  margin-right: auto !important;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navbar ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  list-style: none;
+  padding: .75rem 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  padding: .75rem;
+}
+
+.navbar img {
+  vertical-align: middle;
+}

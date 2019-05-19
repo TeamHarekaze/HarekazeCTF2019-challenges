@@ -1,0 +1,48 @@
+h1, h2, h3 {
+  font-weight: normal;
+}
+
+body {
+  padding: 0 3rem;
+  font-family: "Consolas", monospace;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+#candidates {
+  display: flex;
+}
+
+#candidates > div {
+  flex: 1;
+  margin: 0 1rem 1rem 1rem;
+  padding: 5rem 1rem;
+  text-align: center;
+  border: 2px solid #4f7dc6;
+  font-size: 200%;
+}
+
+.voted {
+  background: #ddd;
+}
+
+.voted:before {
+  content: '\2714';
+}
+
+#info {
+  padding: 1rem;
+}
+
+.log {
+  background: #9fbff2;
+  border: 2px solid #76a6f2;
+}
+
+.error {
+  background: #f29fbf;
+  border: 2px solid #ef77a6;
+}

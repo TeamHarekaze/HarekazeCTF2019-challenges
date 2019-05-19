@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p You can execute JavaScript code only contains <code>#{title}</code>.
+  a(href='/source') source
+  h2 Code
+  form(action='/', method='get')
+    input(type='text', name='code', size=40, placeholder='insert your code here')
+    input(type='submit', value='submit')
+  h2 Output
+  output #{output}

@@ -1,0 +1,1 @@
+flag='HarekazeCTF{im_caught_in_a_dr3am_and_m7_dr3ams_c0m3_tru3}'

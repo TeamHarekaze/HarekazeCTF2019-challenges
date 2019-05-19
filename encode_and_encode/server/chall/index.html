@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Encode & Encode</title>
+  </head>
+  <body>
+    <h1>Encode & Encode</h1>
+    <ul>
+      <li><a href="#pages/about.html" class="link">About</a></li>
+      <li><a href="#pages/lorem.html" class="link">Lorem ipsum</a></li>
+      <li><a href="query.php?source">Source Code</a></li>
+    </ul>
+    <hr>
+    <div id="content"></div>
+    <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      let content = document.getElementById('content');
+      for (let link of document.getElementsByClassName('link')) {
+        link.addEventListener('click', () => {
+          fetch('query.php', {
+            'method': 'POST',
+            'headers': {
+              'Content-Type': 'application/json'
+            },
+            'body': JSON.stringify({
+              'page': link.href.split('#')[1]
+            })
+          }).then(resp => resp.json()).then(resp => {
+            content.innerHTML = resp.content;
+          })
+          return false;
+        }, false);
+      }
+    }, false);
+    </script>
+  </body>
+</html>
