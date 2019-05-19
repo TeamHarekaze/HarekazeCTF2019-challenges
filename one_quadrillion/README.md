@@ -124,6 +124,9 @@ else
 </html>
 ```
 
+## Solution
+- (ja) [HarekazeCTF 2019 想定解法 (nkhrlab 作問分) - nkhrlab~](https://nkhrlab.hatenablog.com/entry/2019/05/19/224643)
+
 ## Flag
 ```
 HarekazeCTF{The_prefix_representing_one_quadrillion_times_of_a_unit_is_peta.}
